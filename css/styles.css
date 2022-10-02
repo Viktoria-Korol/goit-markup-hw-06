@@ -41,6 +41,7 @@ address {
 
 a {
     text-decoration: none;
+    
 }
 
 .container {
@@ -952,8 +953,11 @@ overflow: hidden;
         position: relative;
         
     }
-    .form-element .input-svg{
+     .input-svg{
         position: absolute;
+        top: 50%;
+        left: 50%;
+    
         padding: 0 0;
         margin: 0 0;
         padding-bottom: 12px;
@@ -1046,7 +1050,7 @@ overflow: hidden;
         justify-content: center;
     }
 
-.label-accept{
+    .label-accept{
     font-weight: 400;
     font-size: 14px;
     line-height: 0.5px;
@@ -1067,3 +1071,10 @@ overflow: hidden;
         padding: 0;
 
     }
+    .contract-link{
+        color: var(--accent-color);
+        text-decoration: underline;
+
+    }
+
+
