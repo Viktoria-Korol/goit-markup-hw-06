@@ -130,27 +130,20 @@
                     </div>
         
                     <div class="accept">
-        
                         <input type="checkbox" name="accept" value="accept" id="accept" class="visually-hidden" />
-        
                         <div class="checkbox">
                             <label class="label-accept" for="accept">
                                 <svg viewBox="0 0 100 100" width="12">
                                     <use xlink:href="./images1/sprite.svg#icon-tick"></use>
-                                </svg>
-                        
-        
-                           <p class="text-in-checkbox">Погоджуюся з розсилкою та приймаю <span>
-                            <a class="contract-link link" href="">Умови договору</a> </span></p>
+                                </svg><p class="text-in-checkbox">Погоджуюся з розсилкою та приймаю 
+                                    <span><a class="contract-link link" href="">Умови договору</a> </span></p>
 
                         </label>
                         </div>
                     </div>
-                    
         
                     <button type="submit" class="form-btn">Відправити</button>
         
-                    
                 </form>
         
         
@@ -562,10 +555,10 @@
                         </ul>
                     </div>
                 </div>
-<form class="form-in-footer">
-                
+
+                <div class="footer-form">
                     <b class="footer-title-form">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</b>
-                    <div class="footer-form">
+                    <div class="form-element-footer">
                         <label class="label" for="mail"></label>
                         
                         <input class="footer-mail" type="email" name="mail" id="mail" placeholder="Email" />
@@ -575,14 +568,23 @@
                                 <use xlink:href="./images1/sprite.svg#icon-subscribe"></use>
                             </svg>
                         </button>
-                    
+                    </div>
             </div>
-            </form>
         </div>
     </footer>
     
     <script src="./js/modal.js"></script>
-    
+    <!-- <script>
+        (() => {
+                document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+                    e.preventDefault();
+
+                    new FormData(e.currentTarget).forEach((value, name) =>
+                        console.log(`${name}: ${value}`),
+                    );
+                });
+            })();
+    </script> -->
 
 </body>
 
