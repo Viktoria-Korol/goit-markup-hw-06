@@ -41,6 +41,7 @@ address {
 
 a {
     text-decoration: none;
+    position: relative;
     
 }
 
@@ -932,12 +933,7 @@ overflow: hidden;
 
     /* FORM */
 
-    .form-element {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 15px;
-
-    }
+    
 
     .label {
         
@@ -980,16 +976,17 @@ overflow: hidden;
         width: 100%;
     }
 
-    .form-element input:focus {
+    .footer-mail:focus {
         outline: 1px solid var(--accent-color);
         transition: color var(--time-duration) var(--cubic-bezier);
         
     }
-    .form-element input:focus + .input-svg{
+    .footer-btn input:focus + .input-svg{
         fill: var(--accent-color);
         transition: fill var(--time-duration) var(--cubic-bezier);
 
     }
+    
 
         .form-textarea {
         font-family: 'Roboto';
@@ -1048,7 +1045,7 @@ overflow: hidden;
     }
 
     .checkbox{
-        
+        display: flex;
         align-items: center;
         
         border: 2px solid var(--basic-color);
@@ -1066,13 +1063,9 @@ overflow: hidden;
         justify-content: center;
     }
 
-  .wrap-checkbox{
-    display: flex;
 
-  }
-    
 .text-in-checkbox{
-    
+    display: flex;
     padding-left: 37px;
     font-weight: 400;
     font-size: 14px;
@@ -1083,6 +1076,7 @@ overflow: hidden;
 }
 .label-accept{
     display: flex;
+    
     
 }
 
@@ -1101,17 +1095,39 @@ overflow: hidden;
     }
     .contract-link{
         color: var(--accent-color);
-        text-decoration: underline;
+  
 
+    }
+    .text-in-checkbox a::before{
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        height: 1px;
+        background-color: var(--accent-color);
     }
 .label{
         cursor: default;
+        display: flex;
+        position: absolute;
 }
 
 /* FOOTER FORM */
-.footer-form{
-    margin-left: 93px;
+.form-in-footer{
+    display: flex;
 }
+.footer-form{
+    display: flex;
+    margin-left: 93px;
+    text-transform: uppercase;
+    width: 570px;
+
+}
+.footer-mail{
+    margin-bottom: 20px; 
+}
+
 .footer-mail {
     display: flex;
     padding-left: 12px;
@@ -1134,7 +1150,7 @@ overflow: hidden;
     
 }
 .footer-title-form {
-    display: flex;
+    align-items: baseline;
     margin-bottom: 20px;
     color: var(--white-color);
     font-family: 'Roboto';
@@ -1146,7 +1162,6 @@ overflow: hidden;
 
 .footer-btn {
     display: flex;
-    align-items: baseline;
     align-items: center;
     text-align: center;
     justify-content: center;
