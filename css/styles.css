@@ -1045,6 +1045,7 @@ overflow: hidden;
     }
 
     .checkbox{
+        position: relative;
         display: flex;
         align-items: center;
         
@@ -1182,4 +1183,9 @@ overflow: hidden;
 }
 .footer-form-svg{
     margin-left: 10px;
+}
+
+.tick-wrapper{
+position: relative;
+    display: flex;
 }
