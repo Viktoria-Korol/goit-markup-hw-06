@@ -984,7 +984,7 @@ overflow: hidden;
     
     .form-element input:focus {
         outline: none;
-        border: var(--accent-color);
+        border: 1px solid var(--accent-color);
         transition: color var(--time-duration) var(--cubic-bezier);
         
     }
@@ -1016,7 +1016,7 @@ overflow: hidden;
 
     .form-textarea:focus {
         outline: none;
-        border: var(--accent-color);
+        border: 1px solid var(--accent-color);
         transition: color var(--time-duration) var(--cubic-bezier);
     }
 
@@ -1152,7 +1152,8 @@ overflow: hidden;
 
 
 .footer-mail input:focus{
-    border: var(--accent-color);
+    outline: none;
+    border: 1px solid var(--accent-color);
     transition: color var(--time-duration) var(--cubic-bezier);}
 
 .footer-btn:hover,
