@@ -983,11 +983,13 @@ overflow: hidden;
 
     
     .form-element input:focus {
+        outline: none;
         border: var(--accent-color);
         transition: color var(--time-duration) var(--cubic-bezier);
         
     }
     .form-element input:focus + .input-svg{
+        
         fill: var(--accent-color);
         transition: fill var(--time-duration) var(--cubic-bezier);
 
@@ -1013,6 +1015,7 @@ overflow: hidden;
    
 
     .form-textarea:focus {
+        outline: none;
         border: var(--accent-color);
         transition: color var(--time-duration) var(--cubic-bezier);
     }
