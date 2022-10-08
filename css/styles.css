@@ -862,6 +862,8 @@ overflow: hidden;
 .modal{
     position: absolute;
     padding: 40px 40px;
+        
+    box-sizing: border-box;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -952,6 +954,9 @@ overflow: hidden;
         color: var(--contacts-and-paragraph-color);
     }
 
+    .label-name{
+        margin-top: 17px;
+    }
     .input-wrap{
         position: relative;
         
@@ -1045,7 +1050,7 @@ overflow: hidden;
         height: 50px;
         border: 0;
         margin-top: 30px;
-        margin-left: 165px;
+        margin-left: 124px;
     }
 
     .form-btn:hover,
@@ -1149,13 +1154,6 @@ overflow: hidden;
     border-radius: 4px;
 }
 
-
-
-.footer-mail input:focus{
-    outline: none;
-    border: 1px solid var(--accent-color);
-    transition: color var(--time-duration) var(--cubic-bezier);}
-
 .footer-btn:hover,
 .footer-btn:focus{
     background-color: #188CE8;
@@ -1164,6 +1162,7 @@ overflow: hidden;
     
 }
 .footer-mail::placeholder{
+    
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
@@ -1173,6 +1172,11 @@ overflow: hidden;
         align-items: center;
         letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
+}
+.footer-mail:focus{
+    outline: none;
+    border: 1px solid var(--accent-color);
+    transition: color var(--time-duration) var(--cubic-bezier);
 }
 .footer-title-form {
     display: flex;
